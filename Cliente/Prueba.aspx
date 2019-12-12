@@ -21,7 +21,7 @@
             }
         };
 
-        xhttp.open("DELETE", 'https://localhost:44319/api/Campeones/', true);
+        xhttp.open("DELETE", 'https://localhost:44319/api/Campeones/5', true);
         xhttp.setRequestHeader("content-type", "application/json");
         xhttp.setRequestHeader("cache-control", "no-cache");
 
@@ -52,10 +52,10 @@
             if (this.readyState == 4 && this.status == 200) {
             }
         };
-        xhttp.open("PUT", 'https://localhost:44319/api/Campeones', true);
+        xhttp.open("PUT", 'https://localhost:44319/api/Campeones/5', true);
         xhttp.setRequestHeader("content-type", "application/json");
         xhttp.setRequestHeader("cache-control", "no-cache");
-        xhttp.send(id);
+        xhttp.send(datos);
     }
     function enviarChamp() {
         var xhttp = new XMLHttpRequest();
